@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="it" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <title>JASMINA MAKOTA</title>
 
-  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Google Fonts: Cormorant Garamond (headings) + DM Sans (body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -40,7 +38,6 @@
 
   <style>
     body { background-color: #0b0f1a; color: #f0ece3; font-family: 'DM Sans', sans-serif; }
-
     body::before {
       content: '';
       position: fixed;
@@ -49,14 +46,12 @@
       pointer-events: none;
       z-index: 0;
     }
-
     .glow-line {
       border: none;
       height: 1px;
       background: linear-gradient(to right, transparent, #8fa7c8, transparent);
       opacity: 0.4;
     }
-
     .reveal {
       opacity: 0;
       transform: translateY(28px);
@@ -66,18 +61,14 @@
       opacity: 1;
       transform: translateY(0);
     }
-
     .hero-name {
       text-shadow: 0 0 80px rgba(143, 167, 200, 0.35), 0 0 20px rgba(143, 167, 200, 0.2);
     }
-
     .placeholder-block {
       background: linear-gradient(135deg, #0f1525 0%, #151d35 50%, #0f1525 100%);
       border: 1px solid rgba(143, 167, 200, 0.18);
     }
-
     .rider-list li::marker { color: #8fa7c8; }
-
     .btn-primary {
       position: relative;
       overflow: hidden;
@@ -96,20 +87,6 @@
       transition: transform 0.5s ease;
     }
     .btn-primary:hover::after { transform: translateX(100%); }
-
-    .embed-ratio {
-      position: relative;
-      padding-bottom: 56.25%;
-      height: 0;
-      overflow: hidden;
-    }
-    .embed-ratio iframe {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      border: 0;
-    }
-
     ::-webkit-scrollbar { width: 6px; }
     ::-webkit-scrollbar-track { background: #0b0f1a; }
     ::-webkit-scrollbar-thumb { background: #2a3a5c; border-radius: 3px; }
@@ -123,16 +100,16 @@
        style="background: linear-gradient(to bottom, rgba(8,11,20,0.9) 0%, transparent 100%); backdrop-filter: blur(4px);">
     <span class="font-display text-sm tracking-widest2 text-cream-muted uppercase">EPK</span>
     <ul class="hidden md:flex gap-8 text-xs tracking-widest uppercase text-cream-muted font-body font-light">
-      <li><a href="#about"   class="hover:text-cream transition-colors duration-300">Biography</a></li>
-      <li><a href="#music"   class="hover:text-cream transition-colors duration-300">Audio &amp; Video</a></li>
-      <li><a href="#services" class="hover:text-cream transition-colors duration-300">Services</a></li>
-      <li><a href="#contact" class="hover:text-cream transition-colors duration-300">Contact</a></li>
+      <li><a href="#about"    class="hover:text-cream transition-colors duration-300">Biografia</a></li>
+      <li><a href="#music"    class="hover:text-cream transition-colors duration-300">Audio &amp; Video</a></li>
+      <li><a href="#offerta"  class="hover:text-cream transition-colors duration-300">Offerta</a></li>
+      <li><a href="#contact"  class="hover:text-cream transition-colors duration-300">Contatti</a></li>
       <li class="flex items-center gap-2 ml-4 border-l border-accent/20 pl-4">
         <a href="../"    class="text-cream-dim hover:text-cream transition-colors duration-300">HR</a>
         <span class="text-cream-dim/30">|</span>
-        <span class="text-accent">EN</span>
+        <a href="../en/" class="text-cream-dim hover:text-cream transition-colors duration-300">EN</a>
         <span class="text-cream-dim/30">|</span>
-        <a href="../it/" class="text-cream-dim hover:text-cream transition-colors duration-300">IT</a>
+        <span class="text-accent">IT</span>
       </li>
     </ul>
   </nav>
@@ -143,7 +120,6 @@
       <div class="absolute inset-0" style="background: radial-gradient(ellipse 70% 60% at 50% 50%, rgba(98,136,176,0.12) 0%, transparent 70%);"></div>
     </div>
     <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(8,11,20,0.55) 0%, rgba(8,11,20,0.3) 40%, rgba(8,11,20,0.9) 100%);"></div>
-
     <div class="relative z-10 text-center px-6 flex flex-col items-center gap-5">
       <div class="w-px h-20 bg-gradient-to-b from-transparent to-accent opacity-50"></div>
       <h1 class="hero-name font-display font-light text-cream"
@@ -152,31 +128,29 @@
       </h1>
       <p class="font-display italic text-cream-muted tracking-widest"
          style="font-size: clamp(1rem, 2.5vw, 1.5rem); letter-spacing: 0.22em;">
-        Vocals &amp; DJ
+        Voce &amp; DJ
       </p>
       <div class="w-px h-20 bg-gradient-to-t from-transparent to-accent opacity-50 mt-2"></div>
     </div>
-
     <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-40">
-      <span class="text-xs tracking-widest uppercase text-cream-muted font-body">Scroll</span>
+      <span class="text-xs tracking-widest uppercase text-cream-muted font-body">Scorri</span>
       <div class="w-px h-10 bg-gradient-to-b from-cream-muted to-transparent"></div>
     </div>
   </header>
 
-  <!-- ABOUT / BIOGRAPHY -->
+  <!-- BIOGRAFIA -->
   <section id="about" class="relative z-10 max-w-6xl mx-auto px-6 py-28">
     <div class="reveal">
-      <p class="font-body text-xs tracking-widest2 text-accent uppercase mb-3">01 - Biography</p>
+      <p class="font-body text-xs tracking-widest2 text-accent uppercase mb-3">01 - Biografia</p>
       <hr class="glow-line mb-14" />
     </div>
 
     <div class="reveal grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-start md:items-center">
-
       <div class="flex flex-col gap-4">
         <div class="placeholder-block w-full aspect-[3/4] rounded-sm overflow-hidden">
           <img
             src="../assets/jasmina-biografija.png"
-            alt="Portrait of Jasmina Makota in a red dress, in a red circular chair"
+            alt="Ritratto di Jasmina Makota in abito rosso, seduta su una sedia rotonda rossa"
             class="w-full h-full object-cover object-center"
             loading="lazy"
           />
@@ -185,27 +159,27 @@
 
       <div class="flex flex-col gap-7 justify-center">
         <h2 class="font-display font-light text-cream" style="font-size: clamp(2rem, 4vw, 3rem); line-height: 1.2;">
-          Over 20 years of performance experience
+          Oltre 20 anni di esperienza sul palco
         </h2>
 
         <div class="space-y-4 text-cream-muted font-body font-light leading-relaxed text-[0.95rem]">
           <p>
-            Jasmina is a DJ, vocalist and singer-songwriter with world-class musical education and experience. Her performances bridge the gap between soul and R&amp;B, pop, jazz, and modern club culture. Rooted in Chicago house, disco, and deep house elements, she brings a compelling live vocal performance to her sets. From emotional sunset sessions and refined business dinners to corporate events and a lively dance floor, Jasmina's virtuosic and emotive performance leaves no one indifferent.
+            Jasmina è una DJ, vocalist e cantautrice con un'educazione musicale e un'esperienza di livello mondiale. Le sue esibizioni colmano il divario tra soul e R&amp;B, pop, jazz e la moderna cultura club. Radicata nel Chicago house, disco e deep house, porta una coinvolgente performance vocale live nei suoi set. Dai commoventi sunset session alle eleganti cene di lavoro, dagli eventi aziendali ai vivaci dance floor, l'esibizione virtuosa ed emotiva di Jasmina non lascia nessuno indifferente.
           </p>
           <p>
-            She spent her childhood in Pula, and at age seven moved to Chicago where she grew up, achieving numerous successes through exceptional talent and dedicated work. As a young girl she performed with the Chicago Symphony Orchestra and on the stage of the Lyric Opera of Chicago. Thanks to her musical achievements, she received scholarships to some of the most prestigious private schools in the US.
+            Ha trascorso l'infanzia a Pola (Croazia), e all'età di sette anni si è trasferita a Chicago dove è cresciuta, raggiungendo numerosi traguardi grazie a un talento eccezionale e a un lavoro dedicato. Da bambina si è esibita con la Chicago Symphony Orchestra e sul palco della Lyric Opera of Chicago. Grazie ai suoi risultati musicali, ha ricevuto borse di studio per alcune delle scuole private più prestigiose degli Stati Uniti.
           </p>
           <p>
-            She continued her musical and academic journey at Oberlin College and Conservatory of Music in Ohio on Posse and Jesse Jackson scholarships, where she studied neuroscience and psychology while honing her skills in singing, ethnomusicology, and jazz. During her years in New York she performed at Kaufman Astoria Studios, Triad Theatre and club Fine and Rare, and trained vocally under jazz legends Jay Clayton and Marion Cowings.
+            Ha proseguito il percorso musicale e accademico all'Oberlin College and Conservatory of Music in Ohio con le borse di studio Posse e Jesse Jackson, dove ha studiato neuroscienze e psicologia, perfezionandosi nel canto, nell'etnomusicologia e nel jazz. Durante gli anni trascorsi a New York si è esibita ai Kaufman Astoria Studios, al Triad Theatre e al club Fine and Rare, e si è perfezionata vocalmente sotto la guida delle leggende del jazz Jay Clayton e Marion Cowings.
           </p>
           <p>
-            Most recently she presented herself to a wider audience in Croatia at Dora 2026 with her original song "Higher." In her performances she covers well-known hits from around the world as well as from Croatia, alongside original songs, often improvising over the musical backdrop — adding an element of spontaneity and excitement to every performance.
+            Di recente si è presentata a un pubblico più ampio in Croazia al Dora 2026 con la sua canzone originale "Higher." Nelle sue esibizioni interpreta successi famosi (da tutto il mondo e dalla Croazia) oltre a brani originali, spesso improvvisando sulla base musicale, aggiungendo un elemento di spontaneità ed emozione a ogni performance.
           </p>
           <p>
-            Rather than simply playing music, Jasmina treats every performance as the creation of an emotional atmosphere for your event. She skillfully adapts her performance to the client's wishes, always maintaining the high standard of quality and elegance for which she is already known throughout Istria.
+            Piuttosto che limitarsi a riprodurre musica, Jasmina tratta ogni esibizione come la creazione di un'atmosfera emotiva per il vostro evento. Adatta abilmente la sua performance ai desideri del cliente, mantenendo sempre l'elevato standard di qualità ed eleganza per cui è già conosciuta in tutta l'Istria.
           </p>
           <p>
-            As a DJ/vocal combination, she regularly performs at venues such as Meneghetti Hotel &amp; Winery (Bale), Kavana (Pula), Grand Park Hotel Rovinj by Maistra (Rovinj), and at numerous private events throughout Croatia.
+            Come combinazione DJ/voce, si esibisce regolarmente in luoghi come il Meneghetti Hotel &amp; Winery (Bale), Kavana (Pola), Grand Park Hotel Rovinj by Maistra (Rovigno), e in numerosi eventi privati in tutta la Croazia.
           </p>
         </div>
       </div>
@@ -222,7 +196,6 @@
     </div>
 
     <div class="reveal grid grid-cols-1 lg:grid-cols-2 gap-10">
-
       <div class="flex flex-col gap-4">
         <h3 class="font-display font-light text-cream text-2xl tracking-wide">AUDIO &amp; VIDEO</h3>
         <div class="placeholder-block rounded-sm overflow-hidden">
@@ -230,7 +203,7 @@
             class="w-full block"
             width="100%"
             height="166"
-            title="SoundCloud — Private Event"
+            title="SoundCloud — Evento Privato"
             scrolling="no"
             allow="autoplay"
             loading="lazy"
@@ -243,45 +216,25 @@
       <div class="flex flex-col gap-4">
         <div class="placeholder-block rounded-sm overflow-hidden w-full max-w-sm md:max-w-md mx-auto">
           <div class="relative w-full aspect-[4/5]">
-            <video
-              class="absolute inset-0 w-full h-full object-cover"
-              poster="../assets/video-1-thumbnail.png"
-              controls
-              playsinline
-              preload="metadata"
-            >
+            <video class="absolute inset-0 w-full h-full object-cover" poster="../assets/video-1-thumbnail.png" controls playsinline preload="metadata">
               <source src="../assets/jasmina-hd-1080p-1.mov" type="video/quicktime" />
-              Your browser does not support the video tag.
+              Il browser non supporta il tag video.
             </video>
           </div>
         </div>
-
         <div class="placeholder-block rounded-sm overflow-hidden w-full max-w-sm md:max-w-md mx-auto mt-4">
           <div class="relative w-full aspect-[4/5]">
-            <video
-              class="absolute inset-0 w-full h-full object-cover"
-              poster="../assets/video-2-thumbnail.png"
-              controls
-              playsinline
-              preload="metadata"
-            >
+            <video class="absolute inset-0 w-full h-full object-cover" poster="../assets/video-2-thumbnail.png" controls playsinline preload="metadata">
               <source src="../assets/jasmina-video-2-1.mov" type="video/quicktime" />
-              Your browser does not support the video tag.
+              Il browser non supporta il tag video.
             </video>
           </div>
         </div>
-
         <div class="placeholder-block rounded-sm overflow-hidden w-full max-w-sm md:max-w-md mx-auto mt-4">
           <div class="relative w-full aspect-[4/5]">
-            <video
-              class="absolute inset-0 w-full h-full object-cover"
-              poster="../assets/video-3-thumbnail.png"
-              controls
-              playsinline
-              preload="metadata"
-            >
+            <video class="absolute inset-0 w-full h-full object-cover" poster="../assets/video-3-thumbnail.png" controls playsinline preload="metadata">
               <source src="../assets/jasmina-video-3-1.mov" type="video/quicktime" />
-              Your browser does not support the video tag.
+              Il browser non supporta il tag video.
             </video>
           </div>
         </div>
@@ -291,160 +244,156 @@
 
   <hr class="glow-line max-w-5xl mx-auto" />
 
-  <!-- SERVICES -->
-  <section id="services" class="relative z-10 max-w-6xl mx-auto px-6 py-28">
+  <!-- OFFERTA -->
+  <section id="offerta" class="relative z-10 max-w-6xl mx-auto px-6 py-28">
     <div class="reveal">
-      <p class="font-body text-xs tracking-widest2 text-accent uppercase mb-3">03 - SERVICES</p>
+      <p class="font-body text-xs tracking-widest2 text-accent uppercase mb-3">03 - OFFERTA</p>
       <hr class="glow-line mb-14" />
     </div>
 
     <div class="reveal max-w-3xl space-y-4 text-cream-muted font-body font-light text-sm leading-relaxed">
       <p>
-        Although singing is a unique aspect of Jasmina's performance, vocals do not have to be present throughout the entire evening — they serve as an addition to the overall musical atmosphere.
+        Sebbene il canto sia un aspetto unico dell'esibizione di Jasmina, la voce non deve essere presente per tutta la serata, ma piuttosto come aggiunta all'atmosfera musicale complessiva.
       </p>
       <p>
-        Jasmina is fluent in Spanish and also has experience singing in the following languages: Italian, French, Portuguese, and Irish (Gaelic).
+        Jasmina parla correntemente lo spagnolo e ha esperienza nel canto nelle seguenti lingue: italiano, francese, portoghese e irlandese (gaelico).
       </p>
       <p>
-        Whether you are looking for light background music or a livelier atmosphere, Jasmina will fulfil your wishes. You can choose from the following genres or arrange a combination that best suits your event. These are just some examples of the repertoire:
+        Che stiate cercando un accompagnamento musicale leggero e discreto o un'atmosfera più vivace, Jasmina soddisferà i vostri desideri. Potete scegliere tra i seguenti generi o concordare una combinazione che si adatti al meglio al vostro evento. Questi sono solo alcuni esempi del repertorio:
       </p>
-      <p class="text-cream font-body font-bold text-sm tracking-wide uppercase pt-1">
-        ELECTRONIC MUSIC:
-      </p>
+      <p class="text-cream font-body font-bold text-sm tracking-wide uppercase pt-1">MUSICA ELETTRONICA:</p>
       <div class="placeholder-block rounded-sm p-4 mt-2 max-w-xl">
         <audio class="w-full" controls playsinline preload="metadata" title="Where Love">
           <source src="../assets/wherelove.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
+          Il browser non supporta l'elemento audio.
         </audio>
-        <p class="text-xs tracking-widest uppercase text-cream-dim font-body mt-2">Sample 1</p>
+        <p class="text-xs tracking-widest uppercase text-cream-dim font-body mt-2">Esempio 1</p>
       </div>
       <div class="placeholder-block rounded-sm p-4 mt-4 max-w-xl">
         <audio class="w-full" controls playsinline preload="metadata" title="Near Me 2">
           <source src="../assets/nearme2.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
+          Il browser non supporta l'elemento audio.
         </audio>
-        <p class="text-xs tracking-widest uppercase text-cream-dim font-body mt-2">Sample 2</p>
+        <p class="text-xs tracking-widest uppercase text-cream-dim font-body mt-2">Esempio 2</p>
       </div>
       <p class="text-cream font-body font-bold text-sm tracking-wide uppercase pt-4">JAZZ:</p>
       <div class="placeholder-block rounded-sm p-4 mt-2 max-w-xl">
         <audio class="w-full" controls playsinline preload="metadata" title="Fever">
           <source src="../assets/fever.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
+          Il browser non supporta l'elemento audio.
         </audio>
-        <p class="text-xs tracking-widest uppercase text-cream-dim font-body mt-2">Sample 3</p>
+        <p class="text-xs tracking-widest uppercase text-cream-dim font-body mt-2">Esempio 3</p>
       </div>
       <div class="placeholder-block rounded-sm p-4 mt-4 max-w-xl">
         <audio class="w-full" controls playsinline preload="metadata" title="At Last">
           <source src="../assets/atlast4.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
+          Il browser non supporta l'elemento audio.
         </audio>
-        <p class="text-xs tracking-widest uppercase text-cream-dim font-body mt-2">Sample 4</p>
+        <p class="text-xs tracking-widest uppercase text-cream-dim font-body mt-2">Esempio 4</p>
       </div>
       <p class="text-cream font-body font-bold text-sm tracking-wide uppercase pt-4">SOUL:</p>
       <div class="placeholder-block rounded-sm p-4 mt-2 max-w-xl">
         <audio class="w-full" controls playsinline preload="metadata" title="Just the Two of Us">
           <source src="../assets/justthetwo.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
+          Il browser non supporta l'elemento audio.
         </audio>
-        <p class="text-xs tracking-widest uppercase text-cream-dim font-body mt-2">Sample 5</p>
+        <p class="text-xs tracking-widest uppercase text-cream-dim font-body mt-2">Esempio 5</p>
       </div>
       <div class="placeholder-block rounded-sm p-4 mt-4 max-w-xl">
         <audio class="w-full" controls playsinline preload="metadata" title="Bring It">
           <source src="../assets/bringit.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
+          Il browser non supporta l'elemento audio.
         </audio>
-        <p class="text-xs tracking-widest uppercase text-cream-dim font-body mt-2">Sample 6</p>
+        <p class="text-xs tracking-widest uppercase text-cream-dim font-body mt-2">Esempio 6</p>
       </div>
       <p class="text-cream font-body font-bold text-sm tracking-wide uppercase pt-4">DISCO:</p>
       <div class="placeholder-block rounded-sm p-4 mt-2 max-w-xl">
         <audio class="w-full" controls playsinline preload="metadata" title="Gimme Gimme">
           <source src="../assets/gimmegimme.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
+          Il browser non supporta l'elemento audio.
         </audio>
-        <p class="text-xs tracking-widest uppercase text-cream-dim font-body mt-2">Sample 7</p>
+        <p class="text-xs tracking-widest uppercase text-cream-dim font-body mt-2">Esempio 7</p>
       </div>
       <div class="placeholder-block rounded-sm p-4 mt-4 max-w-xl">
         <audio class="w-full" controls playsinline preload="metadata" title="Upside Down">
           <source src="../assets/upsidedown.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
+          Il browser non supporta l'elemento audio.
         </audio>
-        <p class="text-xs tracking-widest uppercase text-cream-dim font-body mt-2">Sample 8</p>
+        <p class="text-xs tracking-widest uppercase text-cream-dim font-body mt-2">Esempio 8</p>
       </div>
       <p class="text-cream font-body font-bold text-sm tracking-wide uppercase pt-4">POP:</p>
       <div class="placeholder-block rounded-sm p-4 mt-2 max-w-xl">
         <audio class="w-full" controls playsinline preload="metadata" title="Thinking Out">
           <source src="../assets/thinkingout.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
+          Il browser non supporta l'elemento audio.
         </audio>
-        <p class="text-xs tracking-widest uppercase text-cream-dim font-body mt-2">Sample 9</p>
+        <p class="text-xs tracking-widest uppercase text-cream-dim font-body mt-2">Esempio 9</p>
       </div>
       <div class="placeholder-block rounded-sm p-4 mt-4 max-w-xl">
         <audio class="w-full" controls playsinline preload="metadata" title="No Diggity">
           <source src="../assets/nodigg.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
+          Il browser non supporta l'elemento audio.
         </audio>
-        <p class="text-xs tracking-widest uppercase text-cream-dim font-body mt-2">Sample 10</p>
+        <p class="text-xs tracking-widest uppercase text-cream-dim font-body mt-2">Esempio 10</p>
       </div>
       <p class="text-cream font-body font-bold text-sm tracking-wide uppercase pt-4">LATIN:</p>
       <div class="placeholder-block rounded-sm p-4 mt-2 max-w-xl">
         <audio class="w-full" controls playsinline preload="metadata" title="Llorarás">
           <source src="../assets/lloraras2.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
+          Il browser non supporta l'elemento audio.
         </audio>
-        <p class="text-xs tracking-widest uppercase text-cream-dim font-body mt-2">Sample 11</p>
+        <p class="text-xs tracking-widest uppercase text-cream-dim font-body mt-2">Esempio 11</p>
       </div>
       <div class="placeholder-block rounded-sm p-4 mt-4 max-w-xl">
         <audio class="w-full" controls playsinline preload="metadata" title="La Llorona">
           <source src="../assets/llorona.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
+          Il browser non supporta l'elemento audio.
         </audio>
-        <p class="text-xs tracking-widest uppercase text-cream-dim font-body mt-2">Sample 12</p>
+        <p class="text-xs tracking-widest uppercase text-cream-dim font-body mt-2">Esempio 12</p>
       </div>
-      <p class="text-cream font-body font-bold text-sm tracking-wide uppercase pt-4">CROATIAN EVERGREENS:</p>
+      <p class="text-cream font-body font-bold text-sm tracking-wide uppercase pt-4">EVERGREEN CROATI:</p>
       <div class="placeholder-block rounded-sm p-4 mt-2 max-w-xl">
         <audio class="w-full" controls playsinline preload="metadata" title="Gabin">
           <source src="../assets/gabin.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
+          Il browser non supporta l'elemento audio.
         </audio>
-        <p class="text-xs tracking-widest uppercase text-cream-dim font-body mt-2">Sample 13</p>
+        <p class="text-xs tracking-widest uppercase text-cream-dim font-body mt-2">Esempio 13</p>
       </div>
       <div class="placeholder-block rounded-sm p-4 mt-4 max-w-xl">
         <audio class="w-full" controls playsinline preload="metadata" title="Mogu i sama">
           <source src="../assets/moguisama.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
+          Il browser non supporta l'elemento audio.
         </audio>
-        <p class="text-xs tracking-widest uppercase text-cream-dim font-body mt-2">Sample 14</p>
+        <p class="text-xs tracking-widest uppercase text-cream-dim font-body mt-2">Esempio 14</p>
       </div>
     </div>
   </section>
 
   <hr class="glow-line max-w-5xl mx-auto" />
 
-  <!-- CONTACT -->
+  <!-- CONTATTI -->
   <section id="contact" class="relative z-10 max-w-6xl mx-auto px-6 py-28">
     <div class="reveal">
-      <p class="font-body text-xs tracking-widest2 text-accent uppercase mb-3">04 - CONTACT</p>
+      <p class="font-body text-xs tracking-widest2 text-accent uppercase mb-3">04 - CONTATTI</p>
       <hr class="glow-line mb-14" />
     </div>
 
     <div class="reveal grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-start">
-
       <div class="flex flex-col gap-8">
         <h2 class="font-display font-light text-cream" style="font-size: clamp(2rem, 4vw, 3rem); line-height: 1.2;">
-          The perfect musical atmosphere for your event!
+          L'atmosfera musicale perfetta per il vostro evento!
         </h2>
         <p class="text-cream-muted font-body font-light text-sm leading-relaxed">
-          For bookings, schedule a free consultation call via Calendly or get in touch by email.
+          Per le prenotazioni, fissate un appuntamento di consulenza gratuita tramite Calendly o contattateci via email.
         </p>
         <p class="text-cream-muted font-body font-light text-sm leading-relaxed">
-          For all other enquiries, please contact by email only.
+          Per tutte le altre richieste, contattate esclusivamente via email.
         </p>
         <p class="text-cream-muted font-body font-light text-sm leading-relaxed">
-          Response within 48 hours. Available for travel.
+          Risposta entro 48 ore. Disponibile per trasferte.
         </p>
 
         <ul class="space-y-5">
-
           <li class="flex items-center gap-4 group">
             <div class="w-8 h-8 rounded-full border border-accent/20 flex items-center justify-center shrink-0 group-hover:border-accent/60 transition-colors">
               <svg width="14" height="14" fill="none" stroke="#8fa7c8" stroke-width="1.5" viewBox="0 0 24 24">
@@ -460,7 +409,6 @@
               </a>
             </div>
           </li>
-
           <li class="flex items-center gap-4 group">
             <div class="w-8 h-8 rounded-full border border-accent/20 flex items-center justify-center shrink-0 group-hover:border-accent/60 transition-colors">
               <svg width="14" height="14" fill="none" stroke="#8fa7c8" stroke-width="1.5" viewBox="0 0 24 24">
@@ -477,16 +425,13 @@
               </a>
             </div>
           </li>
-
         </ul>
       </div>
 
       <!-- Calendly -->
       <div class="flex flex-col gap-6 justify-center w-full min-w-0">
-        <!-- Calendly inline widget begin -->
         <div class="calendly-inline-widget" data-url="https://calendly.com/jasminamakota/30min" style="min-width:320px;height:700px;"></div>
         <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-        <!-- Calendly inline widget end -->
       </div>
     </div>
   </section>
@@ -498,22 +443,15 @@
       <p class="font-body text-xs text-cream-dim/40 tracking-widest">
         &copy; <span id="year"></span> &nbsp;·&nbsp; All rights reserved
       </p>
-      <p class="font-body text-xs text-cream-dim/30 tracking-widest uppercase">Vocals &amp; DJ</p>
+      <p class="font-body text-xs text-cream-dim/30 tracking-widest uppercase">Voce &amp; DJ</p>
     </div>
   </footer>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-
     const reveals = document.querySelectorAll('.reveal');
     const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-          }
-        });
-      },
+      (entries) => { entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add('visible'); }); },
       { threshold: 0.1, rootMargin: '0px 0px -60px 0px' }
     );
     reveals.forEach((el) => observer.observe(el));
